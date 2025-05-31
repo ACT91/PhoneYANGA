@@ -1,23 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
+// import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Layout from '../components/Layout';
-//import Dashboard from '../pages/Dashboard';
-//import Messages from './pages/Messages';
-//import Calls from './pages/Calls';
-//import Notifications from './pages/Notifications';
-//import Settings from './pages/Settings';
+import Layout from '../pages/MyPhoneDashboard';
+import FindMyPhone from '../pages/FindMyPhone/FindMyPhone'; // Uncomment and adjust the path if FindMyPhone component exists
 
 const App: React.FC = () => {
   return (
     <Router>
-     
-          <Routes>
-            <Route path="/" element={<Layout />} />
-          
-          </Routes>
-
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route path="/FindMyPhone" element={<FindMyPhone/>} />
+        <Route path="/messages" element={<Layout />} />
+        <Route path="/calls" element={<Layout />} />
+        <Route path="/notifications" element={<Layout />} />
+        <Route path="/settings" element={<Layout />} />
+      </Routes>
     </Router>
   );
 };

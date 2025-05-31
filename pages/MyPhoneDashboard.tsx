@@ -152,7 +152,7 @@ const Dashboard = () => {
             <button className="btn btn-outline btn-sm">Send SMS</button>
             <button className="btn btn-outline btn-sm">Make Call</button>
             <button className="btn btn-outline btn-sm">Clear Notifs</button>
-            <Link to="/find-my-phone" className="btn btn-outline btn-sm">Find My Phone</Link>
+            <Link to="../FindMyPhone" className="btn btn-outline btn-sm">Find My Phone</Link>
           </div>
         </div>
       </div>
